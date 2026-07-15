@@ -11,22 +11,22 @@ export default function Navbar() {
 
     return (
         <header className="mb-4">
-            <div className="bg-[#E9ECEF] shadow-[0_4px_8px_-1px_rgba(0,0,0,0.25)]">
+            <div className="bg-[#E9ECEF] shadow-[0_4px_8px_-1px_rgba(0,0,0,0.25)] w-44 min-h-screen p-4">
                 <nav>
-                    <ul className="flex gap-4 items-center">
-                        <img src="/panorama_logo.svg" alt="Logo" className="h-15 w-auto ml-4 mr-auto" />
+                    <ul className="flex flex-col gap-4 items-center">
+                        <img src="/panorama_logo.svg" alt="Logo" className="h-auto w-35 mb-7" />
 
-                        <li><a href="">Overview</a></li>
-                        <li><a href="">Budgetting</a></li>
-                        <li><a href="">Investing</a></li>
-                        <li><a href="">Planning</a></li>
-                        <li><a href="">Education</a></li>
-                        <li><a href="">About Us</a></li>
-
+                        <div className="flex flex-col gap-4 items-left">
+                            <li><a href="">Overview</a></li>
+                            <li><a href="">Budgetting</a></li>
+                            <li><a href="">Investing</a></li>
+                            <li><a href="">Planning</a></li>
+                            <li><a href="">Education</a></li>
+                            <li><a href="">About Us</a></li>
+                        </div>
                     </ul>
                 </nav>
             </div>
-
         </header>
     );
 }
